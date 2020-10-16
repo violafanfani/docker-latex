@@ -14,9 +14,9 @@ jobs:
         run: | 
           docker build . \
             -t ghcr.io/stracquadaniolab/latex:latest \
-            -t ghcr.io/stracquadaniolab/latex:v0.0.0
+            -t ghcr.io/stracquadaniolab/latex:v0.1.0
       - name: "Release Docker image"
         if: startsWith(github.event.ref, 'refs/tags')
         run: | 
           docker push ghcr.io/stracquadaniolab/latex:latest
-          docker push ghcr.io/stracquadaniolab/latex:v0.0.0
+          docker push ghcr.io/stracquadaniolab/latex:v0.1.0
