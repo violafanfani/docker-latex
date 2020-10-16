@@ -1,0 +1,22 @@
+name: "build"
+on: [push]
+        
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to GitHub Container Registry
+        if: startsWith(github.event.ref, 'refs/tags')
+        run: |
+            echo ${{ secrets.GHCR_TOKEN }} | docker login ghcr.io --username ${{ github.repository_owner }} --password-stdin
+      - name: "Build Docker image"
+        run: | 
+          docker build . \
+            -t ghcr.io/stracquadaniolab/latex:latest \
+            -t ghcr.io/stracquadaniolab/latex:v0.0.0
+      - name: "Release Docker image"
+        if: startsWith(github.event.ref, 'refs/tags')
+        run: | 
+          docker push ghcr.io/stracquadaniolab/latex:latest
+          docker push ghcr.io/stracquadaniolab/latex:v0.0.0

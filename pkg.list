@@ -1,0 +1,7 @@
+tini
+procps
+curl
+biber
+latexmk
+make
+texlive-full
