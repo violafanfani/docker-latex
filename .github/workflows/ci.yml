@@ -37,7 +37,7 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: false
-          tags: ghcr.io/stracquadaniolab/latex:latest, ghcr.io/stracquadaniolab/latex:v0.2.0
+          tags: ghcr.io/stracquadaniolab/latex:latest, ghcr.io/stracquadaniolab/latex:v0.3.0
       - name: Push image to registry
         if: startsWith(github.event.ref, 'refs/tags')
         uses: docker/build-push-action@v2
@@ -45,4 +45,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/stracquadaniolab/latex:latest, ghcr.io/stracquadaniolab/latex:v0.2.0
+          tags: ghcr.io/stracquadaniolab/latex:latest, ghcr.io/stracquadaniolab/latex:v0.3.0
