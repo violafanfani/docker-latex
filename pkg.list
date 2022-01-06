@@ -1,7 +1,8 @@
 tini
 procps
 curl
-biber
-latexmk
+git
 make
 texlive-full
+latexmk
+biber

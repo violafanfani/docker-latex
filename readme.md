@@ -4,11 +4,20 @@
 
 ## Description
 
-A full TexLive image ready to use with VScode.
+A full TexLive image ready to use with VScode. 
 
+The image is based on ubuntu and includes the following packages:
+- texlive-full
+- latexmk
+- biber
 ## Tags
 
 - latest: the latest version of the container.
+
+## Platforms
+
+- amd64
+- arm64
 
 ## Authors
 
