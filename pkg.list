@@ -1,5 +1,6 @@
 tini
 procps
+zsh
 curl
 git
 make
