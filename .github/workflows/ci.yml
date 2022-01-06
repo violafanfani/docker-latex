@@ -13,20 +13,28 @@ jobs:
         uses: docker/setup-qemu-action@v1
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
-      - name: Login to DockerHub
+      - name: Login to GitHub Container Registry
         uses: docker/login-action@v1
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GHCR_TOKEN }}
+      - name: Check Dockerfile changes
+        id: container-changed-files
+        uses: tj-actions/changed-files@v11.5
+        with:
+          files: |
+            Dockerfile
+            pkg.list
       - name: Build image
+        if: steps.container-changed-files.outputs.any_changed == 'true'
         uses: docker/build-push-action@v2
         with:
           context: .
           platforms: linux/amd64,linux/arm64
           push: false
           tags: ghcr.io/stracquadaniolab/latex:latest, ghcr.io/stracquadaniolab/latex:v0.1.0
-      - name: Push to registry
+      - name: Push image to registry
         if: startsWith(github.event.ref, 'refs/tags')
         uses: docker/build-push-action@v2
         with:
