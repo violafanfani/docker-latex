@@ -22,6 +22,3 @@ The image is based on ubuntu and includes the following packages:
 ## Authors
 
 - Giovanni Stracquadanio
-
-
-https://raw.githubusercontent.com/:username/:repo-name/:branch/:file.json?token=git-token
