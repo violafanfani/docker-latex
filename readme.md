@@ -10,10 +10,12 @@ The image is based on ubuntu and includes the following packages:
 - texlive-full
 - latexmk
 - biber
+- 
 ## Tags
 
 - latest: the latest version of the container.
 - vXX.YY.ZZ: released images are tagged using semantic versioning.
+
 ## Platforms
 
 - amd64
