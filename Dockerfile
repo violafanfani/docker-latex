@@ -5,7 +5,7 @@ LABEL org.opencontainers.image.description="A full TexLive image ready to use wi
 LABEL org.opencontainers.image.url="https://github.com/violafanfani/docker-latex"
 LABEL org.opencontainers.image.documentation="https://github.com/violanfanfani/docker-latex"
 LABEL org.opencontainers.image.source="https://github.com/violafanfani/docker-latex"
-LABEL org.opencontainers.image.revision="v0.4.1"
+LABEL org.opencontainers.image.revision="v0.4.2"
 LABEL org.opencontainers.image.vendor="violanfanfani"
 LABEL org.opencontainers.image.authors="Viola Fanfani"
 

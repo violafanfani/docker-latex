@@ -1,5 +1,5 @@
 # latex
-![](https://img.shields.io/badge/current_version-v0.4.1-blue)
+![](https://img.shields.io/badge/current_version-v0.4.2-blue)
 ![](https://github.com/violafanfani/docker-latex/workflows/build/badge.svg)
 
 ## Description
