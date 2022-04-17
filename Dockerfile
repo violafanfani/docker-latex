@@ -2,12 +2,12 @@ FROM  debian:buster-slim
 
 LABEL org.opencontainers.image.title="latex"
 LABEL org.opencontainers.image.description="A full TexLive image ready to use with VScode."
-LABEL org.opencontainers.image.url="https://github.com/stracquadaniolab/docker-latex"
-LABEL org.opencontainers.image.documentation="https://github.com/stracquadaniolab/docker-latex"
-LABEL org.opencontainers.image.source="https://github.com/stracquadaniolab/docker-latex"
+LABEL org.opencontainers.image.url="https://github.com/violafanfani/docker-latex"
+LABEL org.opencontainers.image.documentation="https://github.com/violanfanfani/docker-latex"
+LABEL org.opencontainers.image.source="https://github.com/violafanfani/docker-latex"
 LABEL org.opencontainers.image.revision="v0.4.0"
-LABEL org.opencontainers.image.vendor="stracquadaniolab"
-LABEL org.opencontainers.image.authors="Giovanni Stracquadanio"
+LABEL org.opencontainers.image.vendor="violanfanfani"
+LABEL org.opencontainers.image.authors="Viola Fanfani"
 
 
 # copy package list

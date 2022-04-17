@@ -1,6 +1,6 @@
 # latex
 ![](https://img.shields.io/badge/current_version-v0.4.0-blue)
-![](https://github.com/stracquadaniolab/docker-latex/workflows/build/badge.svg)
+![](https://github.com/violafanfani/docker-latex/workflows/build/badge.svg)
 
 ## Description
 
@@ -21,4 +21,7 @@ The image is based on ubuntu and includes the following packages:
 
 ## Authors
 
+- Viola Fanfani
+
+from the repo by
 - Giovanni Stracquadanio
